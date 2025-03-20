@@ -12,12 +12,17 @@ import os
 from fpdf import FPDF
 from datetime import datetime
 from dotenv import load_dotenv
+from bs4 import BeautifulSoup
+import requests
 
 # Load environment variables
 load_dotenv()
 
-# Get API key from environment variable
-GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+# Get API key from Streamlit secrets or environment variable
+try:
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+except:
+    GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
 # Check if API key is available
 if not GROQ_API_KEY:
