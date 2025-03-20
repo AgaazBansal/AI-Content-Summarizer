@@ -1,0 +1,56 @@
+# Core dependencies
+langchain
+langchain-community
+langchain-text-splitters
+langchain-openai
+langchain_huggingface
+langchain_chroma
+langchain-groq
+langserve
+
+# API and Web
+fastapi
+uvicorn
+sse_starlette
+streamlit
+validators==0.28.1
+
+# Data Processing
+pandas
+duckdb
+numexpr
+SQLAlchemy
+mysql-connector-python
+
+# AI and ML
+sentence_transformers
+faiss-cpu
+huggingface_hub
+openai
+
+# Document Processing
+pypdf
+pymupdf
+unstructured
+wikipedia
+arxiv
+
+# YouTube Processing
+youtube_transcript_api
+youtube-transcript-api
+pytube
+yt-dlp
+
+# Search and Scraping
+duckduckgo_search==5.3.1b1
+bs4
+
+# Database and Storage
+chromadb
+
+# Environment and Utilities
+python-dotenv
+dotenv
+ipykernel
+jupyter
+fpdf
